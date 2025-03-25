@@ -179,3 +179,32 @@ Atualizar Filme
     Descrição: Atualiza os detalhes de um filme existente.
     Parâmetros:
         pk: ID do filme.
+
+### Deletar Filme
+- **Endpoint**: `/filme/<int:pk>`
+- **Método**: `DELETE`
+- **Descrição**: Remove um filme da coleção.
+- **Parâmetros**:
+  - `pk`: ID do filme.
+- **Resposta**:
+  - **204 No Content**: O filme foi removido com sucesso.
+  - **404 Not Found**: Filme não encontrado.
+
+## Erros Comuns
+A API pode retornar os seguintes códigos de erro:
+
+- **400 Bad Request**: A requisição não pôde ser entendida devido à sintaxe inválida.
+- **401 Unauthorized**: As credenciais fornecidas são inválidas ou o token de acesso expirou.
+- **403 Forbidden**: O acesso ao recurso solicitado é proibido.
+- **404 Not Found**: O recurso solicitado não foi encontrado.
+- **500 Internal Server Error**: Ocorreu um erro no servidor ao processar a requisição.
+
+## Considerações Finais
+- **CORS**: Certifique-se de que as configurações de CORS estão adequadas para permitir chamadas da sua aplicação frontend.
+- **Documentação**: Mantenha a documentação atualizada com quaisquer alterações na API ou nos endpoints.
+- **Feedback**: Se você encontrar problemas ou tiver sugestões, sinta-se à vontade para entrar em contato com os desenvolvedores da API.
+
+## Conclusão
+Esta documentação fornece uma visão geral completa da API de Filmes, incluindo autenticação, operações CRUD e tratamento de erros. Sinta-se à vontade para explorar e integrar a API em suas aplicações!
+
+
